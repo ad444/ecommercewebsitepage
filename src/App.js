@@ -1,6 +1,5 @@
 import './CSS/App.css';
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
-import Navbar from './Components/Navbar';
 import Men from './Components/Men';
 import Women from './Components/Women';
 import Kids from './Components/Kids';
