@@ -79,6 +79,7 @@ const LogIn = () => {
     //setting title for the document
     window.document.title = 'E-Commerce | LogIn';
 
+    //function to clear errors on focusing input bars
     const clearError = (e) =>{
         const element= e.target.name;
         seterrorMessage((prev)=>{

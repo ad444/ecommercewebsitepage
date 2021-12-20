@@ -45,12 +45,10 @@ const MiddleSection = () => {
     const changeDeliveryMethodActiveState = (e) =>{
         const element = e.target.name; 
         setDeliveryMethodActiveState((prev)=>{
-          prev.paypal='deliveryMethod';
-          prev.visa='deliveryMethod';
-          prev.mastercard='deliveryMethod';
-          prev.maestro='deliveryMethod';
-          prev.discover='deliveryMethod';
-          prev.ideal='deliveryMethod';
+          prev.dhl='deliveryMethod';
+          prev.dpd='deliveryMethod';
+          prev.fedex='deliveryMethod';
+          prev.inpost='deliveryMethod';
           return {
               ...prev,
               [element]:'deliveryMethod activeDeliveryMethod'
