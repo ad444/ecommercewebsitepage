@@ -1,0 +1,317 @@
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+    z-index:-1;
+}
+/* Track */
+::-webkit-scrollbar-track {
+    background: white;
+    opacity:0.5;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background-color: rgb(122, 202, 122);
+}
+/* Navbar CSS */
+#navbar{
+    position: fixed;
+    top:0;
+    border:none;
+    border-bottom-width:2px;
+    border-bottom-style:solid;
+    border-image:linear-gradient(to right bottom, rgba(75, 83, 83,1), rgba(75,83,83,0));
+    border-image-slice: 1;
+    padding-bottom:10px;
+    z-index:2;
+    background-color:white;
+}
+#companyLogo{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor:pointer;
+} 
+#companyNameFirstLetter{
+    color: orange;
+    cursor:pointer;
+}
+#companyTitle{
+    display: inline-block;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left: 10px;
+    font-size:18px;
+    font-weight: 550;
+    cursor:pointer;
+} 
+#navbarLinkContainer{
+    display: inline-block;
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.navbarLinks{
+    display: inline-block;
+    padding: 15px 55px;
+    font-size: 18px;
+    line-height: 36px;
+}
+.navbarLinkText{
+    cursor:pointer;
+}
+.navbarLinkText:hover{
+    color:rgba(75, 83, 83,1)
+}
+#iconsContainer{
+    float:right;
+    list-style: none;
+    position:relative;
+    top:50%;
+    transform:translateY(-50%);
+    padding:0px;
+}
+.icons{
+    display: inline-block;
+    padding: 5px 15px;
+}
+.icon{
+    cursor:pointer;
+}
+.icon:hover{
+    color:rgba(75, 83, 83,1);
+}
+/* Navbar CSS Ends here */
+/* mainComponent CSS */
+#mainSection{
+   margin-top:80px;
+}
+/* mainComponent CSS */
+/* LeftSection CSS */
+#leftSection{
+    padding-left: 20px;
+}
+.leftSectionText{
+    padding:50px 15px;
+    padding-bottom: 30px;   
+    font-size:20px;
+    font-weight:530;
+}
+.shippingDetailsBar{
+    width:45%;
+    margin-left:10px;
+    margin-bottom:20px;
+    border: 1px solid #bcb8b8;
+    border-radius:30px;
+    padding:10px 10px;
+}
+.shippingDetailsBar:focus{
+    outline:1px solid rgb(122, 202, 122);
+}
+/* LeftSection CSS Ends */
+/* MiddleSection CSS */
+.middleSectionTitleText{
+    margin-top:100px;
+}
+.middleSectionDeliveryTitleText{
+    margin-top:20px;
+}
+.paymentMethod, .deliveryMethod{
+    width: 110px;
+    height: 40px;
+    outline: none;
+    border: 1px solid #bcb8b8;
+    border-radius: 30px;
+    background-color: transparent;
+    cursor: pointer;
+    margin-left:10px;
+    margin-right: 18px;
+    margin-bottom: 15px;
+    outline:none;
+}
+.paymentMethod:hover, .deliveryMethod:hover{
+    border:1px solid rgb(94, 201, 94);
+}
+.paymentMethod:focus, .deliveryMethod:focus{
+    outline:none;
+    border:1px solid rgb(94, 201, 94);
+}
+.activePaymentMethod, .activeDeliveryMethod{
+    outline: none;
+    border: 1px solid rgb(94, 201, 94);
+}
+.paymentMethodsImages{
+    width:60px;
+    height:80%;
+    object-fit: contain;
+}
+.deliveryMethodsImages{
+    width:50px;
+    height:80%;
+    float:left;
+    object-fit: contain;
+}
+.deliveryMethodCharge{
+    position: relative;
+    top: 5%;
+    float: right;
+    padding-right: 5px;
+}
+/* MiddleSection CSS Ends here */
+
+/* RightSection CSS Starts */
+#rightSection{
+    padding-right:25px;
+}
+#rightSectionUpperLineDivision{
+    display: inline-block;
+    border:1px solid rgba(75, 83, 83,1);
+    width: 90px;
+    height: 0px;
+    margin-top: 65px;
+    margin-right: 10px;
+    margin-left: 10px;
+    position: relative;
+    bottom: 5px;
+}
+.rightSectionUpperIcon{
+    border: 1px solid #bcb8b8;
+    background-color: transparent;
+    padding: 10px 13px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.rightSectionUpperIcon:hover{
+   border:1px solid rgb(122, 202, 122);
+   background-color: rgb(122, 202, 122);
+   color:whitesmoke;
+}
+.rightSectionUpperIcon:focus{
+    outline:none;
+    border:1px solid rgb(122, 202, 122);
+    background-color: rgb(122, 202, 122);
+    color:whitesmoke;
+}
+#productsSection{
+    height:200px;
+    overflow-y: auto;
+}
+#productsSectionTitleText{
+    clear:right;
+    padding-top: 45px;
+    padding-right: 10px;
+    font-size: 18px;
+    font-weight: 400;
+}
+.product{
+    display: flex;
+}
+.items{
+    flex:1;
+}
+#item2{
+    flex-grow:3;
+}
+.productImage{
+    object-fit:contain;
+    width:100%;
+    height:100%;
+    border-radius: 10px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%)
+}
+.productName{
+    margin:0px;
+    text-align: center;
+}
+.productID{
+    color:#bcb8b8;
+    margin:0px;
+    text-align: center;
+}
+.productPrice{
+    text-align: center;
+    margin: 0px;
+    position: relative;
+    top:50%;
+    transform: translateY(-50%);
+}
+#productsCalculation{
+    margin-top: 20px;
+    padding: 0px;
+    font-size: 20px;
+    line-height: 35px;
+    height: 40px;
+    text-align: center;
+    background-color: #eae7e7;
+    border-radius: 20px;
+}
+#deliveryChargeBox{
+    margin-top: 20px;
+    display: flex;
+}
+.secondBlock{
+    flex-grow: 2;
+}
+#deliveryTruckIcon{
+    font-size: 20px;
+    margin-right:20px;
+    position: relative;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+#deliveryText{
+    font-size: 16px;
+    line-height: 16px;
+    position: relative;
+    top:50%;
+    transform: translateY(-50%);
+}
+/* RightSection CSS Ends here */
+
+/* Footer CSS Starts here */
+#footer{
+    margin: 20px 0px;
+    padding:25px;
+}
+#footerBackArrow{
+    position: relative;
+    top:50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+.footerButtons{
+    float: right;
+}
+/* Footer CSS Ends here */
+.buttons{
+    padding: 10px 30px;
+    border: 1px solid #bcb8b8;
+    border-radius: 30px;
+    margin-left: 10px;
+    background-color: transparent;
+    outline: none;
+    font-weight: 520;
+    cursor: pointer;
+}
+.buttons:hover{
+    background-color: rgb(122, 202, 122);
+    border:1px solid rgb(122, 202, 122);
+    color:#f6f6f6;
+}
+.buttons:focus{
+    outline:none;
+    background-color: rgb(122, 202, 122);
+    color:whitesmoke;
+}
+.sectionText{
+    padding:30px 15px;
+    font-size:18px;
+    font-weight:400;
+    padding-bottom:20px;
+}
